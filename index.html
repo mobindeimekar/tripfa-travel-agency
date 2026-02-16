@@ -1,0 +1,558 @@
+﻿<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تریپفا | خدمات هواپیمایی و گردشگری</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="header-shell">
+        <div class="brand">
+          <img src="logo.png" alt="Tripfa" class="brand-logo" />
+          <div class="brand-text">
+            <span class="brand-title">تریپفا</span>
+            <span class="brand-subtitle">خدمات هواپیمایی و گردشگری</span>
+          </div>
+        </div>
+
+        <nav class="nav-links">
+          <a href="#" class="nav-link">صفحات</a>
+          <a href="#" class="nav-link">درباره ما</a>
+          <a href="#" class="nav-link">تورهای ویژه</a>
+          <a href="#" class="nav-link">مقاصد محبوب</a>
+          <a href="#" class="nav-link">تماس</a>
+        </nav>
+
+        <button class="cta-btn">همین حالا رزرو کن</button>
+
+        <button class="menu-toggle" type="button" aria-label="باز کردن منو">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="side-overlay" aria-hidden="true"></div>
+    <aside class="side-drawer" aria-hidden="true">
+      <div class="drawer-header">
+        <span>منوی تریپفا</span>
+        <button class="drawer-close" type="button" aria-label="بستن منو">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <nav class="drawer-links">
+        <a href="#" class="drawer-link">صفحات</a>
+        <a href="#" class="drawer-link">درباره ما</a>
+        <a href="#" class="drawer-link">تورهای ویژه</a>
+        <a href="#" class="drawer-link">مقاصد محبوب</a>
+        <a href="#" class="drawer-link">تماس</a>
+      </nav>
+      <button class="drawer-cta">همین حالا رزرو کن</button>
+    </aside>
+
+    <main>
+      <section class="hero">
+        <div class="hero-media">
+          <video class="hero-video" autoplay muted loop playsinline>
+            <source src="assets/media/hero.mp4" type="video/mp4" />
+          </video>
+          <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+          <h1>از آسمان تا زمین، سفر رویاهایت را طراحی کن</h1>
+          <p>
+            در تریپفا، مسیرهای هوایی، تورهای لوکس و تجربه های بی نظیر گردشگری در
+            کنار هم جمع شده اند تا هر سفر، یک خاطره ماندگار باشد.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-btn">جستجوی سفر</button>
+            <button class="ghost-btn">مشاوره رایگان</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="flight-section" id="flight-section">
+        <div class="flight-search" id="flight-search">
+          <div class="search-tabs">
+            <button class="tab active" data-tab="domestic">
+              <i class="fa-solid fa-plane"></i>
+              پرواز داخلی
+            </button>
+            <button class="tab" data-tab="international">
+              <i class="fa-solid fa-globe"></i>
+              پرواز خارجی
+            </button>
+            <button class="tab" data-tab="train">
+              <i class="fa-solid fa-train"></i>
+              قطار
+            </button>
+            <button class="tab" data-tab="bus">
+              <i class="fa-solid fa-bus"></i>
+              اتوبوس
+            </button>
+            <button class="tab" data-tab="tour">
+              <i class="fa-solid fa-suitcase-rolling"></i>
+              تور
+            </button>
+            <button class="tab" data-tab="hotel">
+              <i class="fa-solid fa-hotel"></i>
+              هتل
+            </button>
+          </div>
+
+          <div class="search-body">
+            <div class="search-options">
+              <button class="option-pill active" data-trip="oneway">یک طرفه</button>
+              <button class="option-pill" data-trip="round">رفت و برگشت</button>
+            </div>
+
+            <div class="search-fields">
+              <div class="field">
+                <label>مبدا (شهر)</label>
+                <div class="field-input">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <input type="text" placeholder="انتخاب شهر" list="origin-cities" />
+                  <datalist id="origin-cities">
+                    <option value="تهران"></option>
+                    <option value="مشهد"></option>
+                    <option value="اصفهان"></option>
+                    <option value="شیراز"></option>
+                    <option value="تبریز"></option>
+                    <option value="اهواز"></option>
+                    <option value="رشت"></option>
+                    <option value="کرج"></option>
+                    <option value="قم"></option>
+                    <option value="کرمان"></option>
+                    <option value="یاسوج"></option>
+                    <option value="سنندج"></option>
+                    <option value="ارومیه"></option>
+                    <option value="اردبیل"></option>
+                    <option value="زنجان"></option>
+                    <option value="قزوین"></option>
+                    <option value="ساری"></option>
+                    <option value="گرگان"></option>
+                    <option value="بندرعباس"></option>
+                    <option value="کیش"></option>
+                    <option value="قشم"></option>
+                    <option value="بوشهر"></option>
+                    <option value="یزد"></option>
+                    <option value="همدان"></option>
+                    <option value="کرمانشاه"></option>
+                    <option value="ایلام"></option>
+                    <option value="خرم آباد"></option>
+                    <option value="بیرجند"></option>
+                    <option value="زاهدان"></option>
+                    <option value="چابهار"></option>
+                    <option value="کاشان"></option>
+                    <option value="نیشابور"></option>
+                    <option value="سبزوار"></option>
+                    <option value="آبادان"></option>
+                    <option value="ماهشهر"></option>
+                    <option value="کیش"></option>
+                    <option value="سمنان"></option>
+                    <option value="شاهرود"></option>
+                    <option value="مراغه"></option>
+                    <option value="اراک"></option>
+                    <option value="بجنورد"></option>
+                    <option value="قائن"></option>
+                    <option value="زابل"></option>
+                    <option value="خرم آباد"></option>
+                    <option value="بندر انزلی"></option>
+                    <option value="لنگرود"></option>
+                    <option value="لاهیجان"></option>
+                    <option value="آستارا"></option>
+                    <option value="بابل"></option>
+                    <option value="آمل"></option>
+                    <option value="نور"></option>
+                    <option value="نوشهر"></option>
+                    <option value="چالوس"></option>
+                    <option value="رامسر"></option>
+                    <option value="تنکابن"></option>
+                    <option value="قائم شهر"></option>
+                    <option value="بهشهر"></option>
+                    <option value="گنبد کاووس"></option>
+                    <option value="میانه"></option>
+                    <option value="خوی"></option>
+                    <option value="ماکو"></option>
+                    <option value="مرند"></option>
+                    <option value="میبد"></option>
+                    <option value="ابرکوه"></option>
+                    <option value="کاشمر"></option>
+                    <option value="رفسنجان"></option>
+                    <option value="سیرجان"></option>
+                    <option value="جیرفت"></option>
+                    <option value="بم"></option>
+                    <option value="آباده"></option>
+                    <option value="فاسا"></option>
+                    <option value="کازرون"></option>
+                    <option value="لار"></option>
+                    <option value="لنگه"></option>
+                    <option value="برازجان"></option>
+                    <option value="گناوه"></option>
+                    <option value="دزفول"></option>
+                    <option value="شوشتر"></option>
+                    <option value="بهبهان"></option>
+                    <option value="مسجدسلیمان"></option>
+                    <option value="الیگودرز"></option>
+                    <option value="دلفان"></option>
+                    <option value="بروجرد"></option>
+                    <option value="ملایر"></option>
+                    <option value="تویسرکان"></option>
+                    <option value="نهاوند"></option>
+                    <option value="مرودشت"></option>
+                    <option value="بندر لنگه"></option>
+                    <option value="نورآباد"></option>
+                    <option value="دهدشت"></option>
+                    <option value="گچساران"></option>
+                  </datalist>
+                </div>
+              </div>
+
+              <button class="swap-btn" type="button" aria-label="جابه جایی">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              </button>
+
+              <div class="field">
+                <label>مقصد (شهر)</label>
+                <div class="field-input">
+                  <i class="fa-solid fa-location-crosshairs"></i>
+                  <input type="text" placeholder="انتخاب شهر" list="destination-cities" />
+                  <datalist id="destination-cities">
+                    <option value="مشهد"></option>
+                    <option value="اصفهان"></option>
+                    <option value="شیراز"></option>
+                    <option value="تبریز"></option>
+                    <option value="اهواز"></option>
+                    <option value="رشت"></option>
+                    <option value="کیش"></option>
+                    <option value="قشم"></option>
+                    <option value="بندرعباس"></option>
+                    <option value="کرمان"></option>
+                    <option value="یزد"></option>
+                    <option value="کرمانشاه"></option>
+                    <option value="همدان"></option>
+                    <option value="ساری"></option>
+                    <option value="گرگان"></option>
+                    <option value="بوشهر"></option>
+                    <option value="زاهدان"></option>
+                    <option value="چابهار"></option>
+                    <option value="ارومیه"></option>
+                    <option value="اردبیل"></option>
+                    <option value="قزوین"></option>
+                    <option value="قم"></option>
+                    <option value="کاشان"></option>
+                    <option value="نیشابور"></option>
+                    <option value="دزفول"></option>
+                    <option value="آبادان"></option>
+                    <option value="بندر انزلی"></option>
+                    <option value="رامسر"></option>
+                    <option value="نوشهر"></option>
+                    <option value="چالوس"></option>
+                    <option value="گنبد کاووس"></option>
+                    <option value="بجنورد"></option>
+                    <option value="خرم آباد"></option>
+                    <option value="بیرجند"></option>
+                  </datalist>
+                </div>
+              </div>
+
+              <div class="field">
+                <label>تاریخ رفت</label>
+                <div class="field-input date-field">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  <input type="date" />
+                </div>
+              </div>
+
+              <div class="field return-field">
+                <label>تاریخ برگشت</label>
+                <div class="field-input date-field">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  <input type="date" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label>مسافران</label>
+                <div class="field-input">
+                  <i class="fa-solid fa-user-group"></i>
+                  <input type="text" placeholder="۲ بزرگسال" />
+                </div>
+              </div>
+
+              <button class="search-btn">جستجو</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="destinations" id="destinations">
+        <div class="section-heading">
+          <h2>مقاصد منتخب گردشگری</h2>
+          <p>
+            از شهرهای پرهیجان تا مقصدهای آرام، بسته های اختصاصی تریپفا را انتخاب کن
+            و تجربه ای متفاوت بساز.
+          </p>
+        </div>
+
+        <div class="city-tabs" id="city-tabs">
+          
+        </div>
+        <div class="destination-grid" id="destination-grid"></div>
+      </section>
+
+      <section class="about-agency" id="about-agency">
+        <div class="about-shell">
+          <div class="about-text">
+            <span class="about-kicker">تجربه سفر، با نگاهی تازه</span>
+            <h2>آژانس هواپیمایی تریپفا؛ طراحی مسیرهای اختصاصی برای هر سلیقه</h2>
+            <p>
+              ما فقط بلیت نمی فروشیم، بلکه تجربه های سفر می سازیم. از انتخاب بهترین
+              پرواز تا برنامه ریزی هتل و تور، همه چیز با پشتیبانی کامل انجام می شود.
+            </p>
+            <button class="about-btn" id="about-toggle">توضیحات بیشتر</button>
+          </div>
+
+          <div class="about-media">
+            <div class="about-image">
+              <img src="assets/media/abo.webp" alt="Tripfa" />
+            </div>
+          </div>
+        </div>
+
+        <div class="about-more-wrap" id="about-more">
+          <div class="about-paragraph">
+            <h4>تحلیل نیاز سفر</h4>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+              از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+              سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+              متنوع با هدف بهبود ابزارهای کاربردی می باشد. لورم ایپسوم متن ساختگی با
+              تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. لورم
+              ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+              طراحان گرافیک است.
+            </p>
+          </div>
+          <div class="about-paragraph">
+            <h4>طراحی برنامه اختصاصی</h4>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+              از طراحان گرافیک است. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده
+              شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری
+              برای طراحان رایانه ای علی الخصوص طراحان خلاق ایجاد شود. لورم ایپسوم متن
+              ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+              است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است.
+            </p>
+          </div>
+          <div class="about-paragraph">
+            <h4>پشتیبانی و اجرا</h4>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+              از طراحان گرافیک است. در این صورت می توان امید داشت که تمام و دشواری
+              موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز
+              شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود باشد.
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+              طراحان گرافیک است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+              چاپ و با استفاده از طراحان گرافیک است.
+            </p>
+          </div>
+          <div class="about-paragraph">
+            <h4>تضمین کیفیت سفر</h4>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+              از طراحان گرافیک است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+              صنعت چاپ و با استفاده از طراحان گرافیک است. لورم ایپسوم متن ساختگی با
+              تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. لورم
+              ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+              طراحان گرافیک است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+              چاپ و با استفاده از طراحان گرافیک است.
+            </p>
+          </div>
+          <div class="about-paragraph">
+            <h4>شبکه همکاران تخصصی</h4>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+              از طراحان گرافیک است. این متن به عنوان دامی برای پر کردن بخش های خالی
+              استفاده می شود تا تمرکز روی ساختار و تجربه کاربری باقی بماند. لورم ایپسوم
+              متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+              است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+              از طراحان گرافیک است.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-card">
+            <h3>۱۰۰٪</h3>
+            <span>رضایت مشتریان</span>
+          </div>
+          <div class="stat-card">
+            <h3>۴۰۰+</h3>
+            <span>مقصدهای متنوع</span>
+          </div>
+          <div class="stat-card">
+            <h3>۱۲۰+</h3>
+            <span>همکار متخصص</span>
+          </div>
+          <div class="stat-card">
+            <h3>۳۰۰۰+</h3>
+            <span>سفر موفق سالانه</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-section" id="app-section">
+        <div class="app-card">
+          <div class="app-content">
+            <h2>اپلیکیشن تریپفا</h2>
+            <p>سریع تر و مطمئن تر به سفر بروید. تمام خدمات گردشگری در جیب شما!</p>
+            <div class="app-pill">
+              <span>قابل نصب روی Android و iOS</span>
+              <i class="fa-brands fa-android"></i>
+              <i class="fa-brands fa-apple"></i>
+            </div>
+            <a href="#" class="app-link">
+              مشاهده لینک های دانلود
+              <i class="fa-solid fa-download"></i>
+            </a>
+          </div>
+          <div class="app-qr">
+            <img src="assets/media/qrcode.png" alt="QR دانلود" />
+            <span>برای دانلود اسکن کنید</span>
+          </div>
+          <div class="app-media">
+            <img src="assets/media/app.png" alt="اپلیکیشن تریپفا" />
+          </div>
+
+        </div>
+      </section>
+
+      <section class="faq-section" id="faq-section">
+        <div class="faq-header">
+          <h2>پرسش های شما</h2>
+          <p>پاسخ سریع به سوال های متداول درباره خرید بلیت و خدمات تریپفا.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              چند روز قبل از پرواز بلیت هواپیما را بخریم؟
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              بهترین زمان خرید بلیت به مقصد و فصل سفر بستگی دارد، اما معمولا ۲ تا ۴ هفته
+              قبل از پرواز می تواند قیمت بهتری داشته باشد.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              در هر پرواز، میزان بار مجاز چقدر است؟
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              میزان بار مجاز با توجه به کلاس پروازی و ایرلاین متفاوت است. تریپفا قبل از
+              خرید، اطلاعات دقیق هر پرواز را نمایش می دهد.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              نرخ بلیت هواپیما برای کودکان زیر ۱۲ سال چگونه است؟
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              نرخ بلیت کودک به قوانین هر ایرلاین وابسته است و ممکن است درصدی کمتر از
+              بزرگسالان باشد.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              رزرو آنلاین بلیت هواپیما هزینه بیشتری از خرید حضوری دارد؟
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              خیر، رزرو آنلاین معمولا مقرون به صرفه تر است و امکان مقایسه قیمت ها را
+              آسان تر می کند.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              آیا پس از خرید اینترنتی بلیت هواپیما امکان استرداد وجود دارد؟
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              بله، امکان استرداد طبق قوانین ایرلاین وجود دارد و درصد جریمه بسته به زمان
+              لغو متفاوت است.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              آیا پس از خرید بلیت هواپیما امکان تغییر نام با نام خانوادگی وجود دارد؟
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              تغییر نام در برخی ایرلاین ها ممکن است، اما اغلب نیاز به صدور مجدد بلیت دارد.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <img src="logo.png" alt="Tripfa" class="footer-logo" />
+            <p>پشتیبانی: ۰۲۱-۴۳۹۰۰۰۰۰</p>
+          </div>
+
+          <div class="footer-links">
+            <h4>تریپفا</h4>
+            <a href="#">درباره ما</a>
+            <a href="#">تماس با ما</a>
+            <a href="#">چرا تریپفا</a>
+            <a href="#">مجله سفر</a>
+          </div>
+
+          <div class="footer-links">
+            <h4>خدمات مشتریان</h4>
+            <a href="#">مرکز پشتیبانی</a>
+            <a href="#">راهنمای خرید</a>
+            <a href="#">قوانین و مقررات</a>
+            <a href="#">پرسش و پاسخ</a>
+          </div>
+
+          <div class="footer-links">
+            <h4>اطلاعات تکمیلی</h4>
+            <a href="#">فروش سازمانی</a>
+            <a href="#">فرصت های شغلی</a>
+            <a href="#">همکاری با ما</a>
+            <a href="#">سنجه رضایت</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+          <p>کلیه حقوق این سرویس متعلق به تریپفا می باشد. نسخه 1.0.0</p>
+        </div>
+      </footer>
+      
+    </main>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
